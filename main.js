@@ -9,17 +9,19 @@ for (var i = 0; i < number.length ; i++){
 //function addNumber
 function addNumber(e){
 
-    if(e.target.dataset.value == "C")
+    var num = e.target.dataset.value;
+
+    if(num == "C")
     {
         input.innerHTML  = "";
 
-    }else if(e.target.dataset.value == "=")
+    }else if(num == "=")
     {
-        input.innerHTML = eval(input.innerHTML).toFixed(2);
+        input.innerHTML = Math.round(eval(input.innerHTML) * 100)/100;
 
     }
     else{
-        input.innerHTML = input.innerHTML.concat((e.target.dataset.value));
+        input.innerHTML = input.innerHTML.concat((num));
     }
     
 }
