@@ -25,10 +25,3 @@ function addNumber(e){
     }
     
 }
-
-//function boolen
-/*function isInfinite(eval(input.innerHTML)){
-    return value === value / 0;
-}*/
-
-/*.inerhtml = isInfinite(eval(.......)) ? 'divbyzero' : eval(...);*/
