@@ -15,7 +15,7 @@ function addNumber(e){
 
     }else if(e.target.dataset.value == "=")
     {
-        input.innerHTML = eval(input.innerHTML);
+        input.innerHTML = eval(input.innerHTML).toFixed(2);
 
     }
     else{
